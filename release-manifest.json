@@ -1,9 +1,9 @@
 {
-  "version": "8dbffb66e4b2314c",
+  "version": "8ffafe50078bc82d",
   "files": [
     {
       "path": "index.html",
-      "sha256": "46d95e908033ba5d0d1cb55ca62db158669870870e98d9d10732bb6bfa91d59c",
+      "sha256": "1a2a28f7138221e8b0bdd280e6acce667dc459465fc626b42bbc6b8dfbecc6f8",
       "bytes": 855
     },
     {
@@ -13,7 +13,7 @@
     },
     {
       "path": "sw.js",
-      "sha256": "4271336a3ce52a5b8983c1f2ea282d05d156c8bff24eab3994777e3753e3ed2a",
+      "sha256": "8ddebe020d74295033b12d98ce21624a5ca9c729cdec5e90bd53c83701f60f62",
       "bytes": 2388
     },
     {
@@ -37,9 +37,9 @@
       "bytes": 21789
     },
     {
-      "path": "assets/app-5LCIGLYA.js",
-      "sha256": "543a9d707fe0bca4d8581c8b01d66fd9cdd3121fc27cd810f442ce9e6a539318",
-      "bytes": 710191
+      "path": "assets/app-HM47YAMW.js",
+      "sha256": "17c7bfececbe6b9ad66e525b70680fa7d602c2cf31f2c8b855a24bd4a49e5d00",
+      "bytes": 556410
     },
     {
       "path": "assets/app-SARXXCKH.css",
