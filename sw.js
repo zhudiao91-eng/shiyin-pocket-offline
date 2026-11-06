@@ -1,5 +1,5 @@
 // Audio and playlists stay in IndexedDB on the device.
-const VERSION="8ffafe50078bc82d",ASSETS=["./","./index.html","./assets/app-HM47YAMW.js","./assets/app-SARXXCKH.css","./icon.svg","./icon-192.png","./icon-512.png","./manifest.webmanifest","./third-party-notices.txt"];
+const VERSION="9fdecb2230770459",ASSETS=["./","./index.html","./assets/app-F326JVXC.js","./assets/app-C3HTU47N.css","./icon.svg","./icon-192.png","./icon-512.png","./manifest.webmanifest","./third-party-notices.txt"];
 const SCOPE=new URL(self.registration.scope),PREFIX='shiyin-device-shell-'+encodeURIComponent(SCOPE.pathname)+'-',CACHE=PREFIX+VERSION;
 const FILES=ASSETS.map(path=>new URL(path,SCOPE).href),INDEX=new URL('./index.html',SCOPE).href;
 self.addEventListener('install',event=>event.waitUntil((async()=>{
