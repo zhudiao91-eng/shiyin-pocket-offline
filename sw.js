@@ -1,5 +1,5 @@
 // Audio and playlists stay in IndexedDB on the device.
-const VERSION="9fdecb2230770459",ASSETS=["./","./index.html","./assets/app-F326JVXC.js","./assets/app-C3HTU47N.css","./icon.svg","./icon-192.png","./icon-512.png","./manifest.webmanifest","./third-party-notices.txt"];
+const VERSION="466ee5c8fa5e7840",APP_VERSION="0.2.0",ASSETS=["./","./index.html","./assets/app-2N53OSHS.js","./assets/app-PKG26D3E.css","./icon.svg","./icon-192.png","./icon-512.png","./manifest.webmanifest","./third-party-notices.txt"];
 const SCOPE=new URL(self.registration.scope),PREFIX='shiyin-device-shell-'+encodeURIComponent(SCOPE.pathname)+'-',CACHE=PREFIX+VERSION;
 const FILES=ASSETS.map(path=>new URL(path,SCOPE).href),INDEX=new URL('./index.html',SCOPE).href;
 self.addEventListener('install',event=>event.waitUntil((async()=>{
@@ -10,7 +10,6 @@ self.addEventListener('install',event=>event.waitUntil((async()=>{
   if(path===SCOPE.href||path===INDEX){if(!(await response.clone().text()).includes('name="shiyin-offline"'))throw Error('Unexpected page; offline preparation stopped');}
   await cache.put(path,response);
  }
- await self.skipWaiting();
 })()));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{
  const keys=(await caches.keys()).filter(key=>key.startsWith(PREFIX));
@@ -29,6 +28,7 @@ self.addEventListener('fetch',event=>{
  else if(FILES.includes(url.href))event.respondWith((async()=>{return (await (await caches.open(CACHE)).match(url.href))||fetch(event.request);})());
 });
 self.addEventListener('message',event=>{
+ if(event.data?.type==='APPLY_UPDATE'){event.waitUntil(self.skipWaiting());return;}
  if(event.data?.type!=='CHECK_OFFLINE_READY')return;
- event.waitUntil((async()=>{const cache=await caches.open(CACHE);const files=await Promise.all(FILES.map(path=>cache.match(path)));event.ports[0]?.postMessage({ready:files.every(Boolean),version:VERSION});})());
+ event.waitUntil((async()=>{const cache=await caches.open(CACHE);const files=await Promise.all(FILES.map(path=>cache.match(path)));event.ports[0]?.postMessage({ready:files.every(Boolean),version:VERSION,appVersion:APP_VERSION});})());
 });

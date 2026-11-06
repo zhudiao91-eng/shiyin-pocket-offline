@@ -1,4 +1,4 @@
-拾音 0.1.2 · Third-party notices
+拾音 0.2.0 · Third-party notices
 
 用户项目 UI 源码复用：见 docs/UI-REFERENCE.md 与 references/ui/omnieye/source-manifest.json。
 网页玻璃是近似实现，不是苹果私有原生渲染代码。

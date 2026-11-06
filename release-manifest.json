@@ -1,9 +1,9 @@
 {
-  "version": "9fdecb2230770459",
+  "version": "466ee5c8fa5e7840",
   "files": [
     {
       "path": "index.html",
-      "sha256": "3e2798f3d970b76a62d6e57d7e73839ad00480152d0102529af8cf1b503ab5aa",
+      "sha256": "f66a9f8e207ab6986f763aab03eaae760728f9614fde273945050fe5a9ec42cb",
       "bytes": 855
     },
     {
@@ -13,8 +13,8 @@
     },
     {
       "path": "sw.js",
-      "sha256": "d3d293f405500a27694b33faaeb5edd85842872d3fdf1afdf6462aca11f25b56",
-      "bytes": 2388
+      "sha256": "e8a65c3dcb24ae47affbf388eb86b684f7687f2ec20b317755e00fdf0f0bf4fd",
+      "bytes": 2488
     },
     {
       "path": "icon.svg",
@@ -33,18 +33,18 @@
     },
     {
       "path": "third-party-notices.txt",
-      "sha256": "0a22c1aaa55e16939eb595d167c6c49457323a4f6d08f1ce3a8c35ad4d687fe2",
+      "sha256": "28c7bd0e9008a78b064485187dbeeee61fce447ecac3c55723c962748533fafc",
       "bytes": 21789
     },
     {
-      "path": "assets/app-F326JVXC.js",
-      "sha256": "94180e3ecdf906481ee4f461e8ab84a25d66efc336bef50f19b5de778dff3ac2",
-      "bytes": 561355
+      "path": "assets/app-2N53OSHS.js",
+      "sha256": "e1f9373cb7519b78f5df9129ca78c95725e422016fbe065fb87fe142c94dbe3b",
+      "bytes": 636745
     },
     {
-      "path": "assets/app-C3HTU47N.css",
-      "sha256": "d8f2796a4a73e25c0af232afbe7c100d97ad96fabb09c634971e2392a480e38f",
-      "bytes": 29742
+      "path": "assets/app-PKG26D3E.css",
+      "sha256": "07966ddac5ce2ab1959485331903f505ce72bafb550903a9f25be22cd95fd2b7",
+      "bytes": 34663
     }
   ],
   "musicLocation": "device IndexedDB only"
