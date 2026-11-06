@@ -1,0 +1,51 @@
+{
+  "version": "1b9dd2068240fbd1",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "dd2ceab3372283491f34c215d3bfee6e9dc24d8b8fef1ea353229834db016d29",
+      "bytes": 855
+    },
+    {
+      "path": "manifest.webmanifest",
+      "sha256": "47871c0abeaea8bba45cafd94d96d426e8fd9e03b712cfaab2f864bf995568e7",
+      "bytes": 417
+    },
+    {
+      "path": "sw.js",
+      "sha256": "0c01ccc6eac9069654773b740023af22f2b63a260eae377f82b725a27303a9c9",
+      "bytes": 2388
+    },
+    {
+      "path": "icon.svg",
+      "sha256": "b4a848c45f839c03ce503058743786596b81a0c9ab5775b8aa446f8df24dc88e",
+      "bytes": 480
+    },
+    {
+      "path": "icon-192.png",
+      "sha256": "48c0b2093606b931b86319446adb4e3ecfc22b94be8331423c45c85038e8bc7b",
+      "bytes": 4406
+    },
+    {
+      "path": "icon-512.png",
+      "sha256": "12b2a859b1b7e89adb300119ca8f066e63c1c8254a092fb6c23beb09bb3d632c",
+      "bytes": 17387
+    },
+    {
+      "path": "third-party-notices.txt",
+      "sha256": "0f4dd1d777516b873a38c21ad0334fce48f0e90b5baacccd42a1d3922818ae09",
+      "bytes": 4758
+    },
+    {
+      "path": "assets/app-V3YNJ6DC.js",
+      "sha256": "c96d117647446b4fc99e2cebc738169adc64707addc7e2c3c0086199a4eaf5cd",
+      "bytes": 300622
+    },
+    {
+      "path": "assets/app-SARXXCKH.css",
+      "sha256": "41520c07804926f53a4dc786975f26b72720af62f2255a57135f0cc0d8633509",
+      "bytes": 28870
+    }
+  ],
+  "musicLocation": "device IndexedDB only"
+}
